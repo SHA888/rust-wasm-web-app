@@ -1,8 +1,16 @@
 [package]
 name = "hello-wasm"
 version = "0.1.0"
+author = ["Kresna Sucandra <kresnasucandra@gmail.com>"]
+description = "A sample project with wasm-pack on Rust"
+license = "MIT/Aphace-2.0"
+repository = "https://github.com/SHA888/rust-wasm-web-app"
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
+wasm-bindgen = "0.2.74"
